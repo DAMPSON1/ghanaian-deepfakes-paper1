@@ -1,0 +1,55 @@
+{
+  "n_images": 6034,
+  "accuracy": 0.9996685449121644,
+  "balanced_accuracy": 0.99980894153611,
+  "precision_ffpp": 1,
+  "recall_ffpp": 0.9996178830722201,
+  "f1_ffpp": 0.9998089050257978,
+  "confusion_matrix_rows_actual_cols_pred_ghanaian_ffpp": [
+    [
+      800,
+      0
+    ],
+    [
+      2,
+      5232
+    ]
+  ],
+  "threshold": 0.5,
+  "roc_auc_ffpp": 0.9999997611769201,
+  "best_epoch": 8,
+  "class_mapping": {
+    "ghanaian": 0,
+    "ffpp": 1
+  },
+  "split_counts": {
+    "train": {
+      "n_images": 17885,
+      "n_groups": 568,
+      "by_source": {
+        "ffpp": 15885,
+        "ghanaian": 2000
+      }
+    },
+    "val": {
+      "n_images": 6125,
+      "n_groups": 190,
+      "by_source": {
+        "ffpp": 5325,
+        "ghanaian": 800
+      }
+    },
+    "test": {
+      "n_images": 6034,
+      "n_groups": 190,
+      "by_source": {
+        "ffpp": 5234,
+        "ghanaian": 800
+      }
+    }
+  },
+  "seed": 42,
+  "max_images_per_group": 200,
+  "pretrained": true,
+  "note": "Source discrimination among authentic images is not a direct measure of which features the original deepfake classifier relied on."
+}
