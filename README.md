@@ -35,8 +35,16 @@ python source_discrimination.py --data-root /path/to/data --manifest /path/to/ap
 
 This example requires the original approved input files; it cannot run on the released metadata alone. Re-execution has **not** been independently demonstrated from this public repository.
 
-## Data availability and restrictions
+## Public dataset and data availability
 
-**This is a public code-and-aggregate-results repository, not a public download of the Ghanaian face-image dataset or FF++ image files.** The source videos were publicly viewable; rights to redistribute derived identifiable facial images are separate. The image datasets and original individual-level prediction/manifests are not distributed here. Please consult [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
+The **43,986 authentic Ghanaian face crops used in the original cross-source baseline** are published separately on Zenodo:
+
+- **Dataset record:** https://zenodo.org/records/24320872
+- **DOI:** https://doi.org/10.5281/zenodo.24320872
+- **Files deposited:** `paper1_ghanaian_real_train.zip` (25,058 images), `paper1_ghanaian_real_val.zip` (7,600), `paper1_ghanaian_real_test.zip` (11,328), `dataset_summary.json`, and `ghanaian_authentic_image_manifest.csv`.
+
+This repository provides public code and aggregated results, rather than duplicating the Zenodo ZIP archives. The original authentic-only *source-control* experiment selected a subset of Ghanaian images (3,600 in total) and authentic FF++ images (26,444 in total); the Zenodo split archives describe the original Ghanaian baseline image partitions and **should not be assumed to reproduce the source-control split without its original selection manifest**.
+
+FaceForensics++ images are **not** included in the Zenodo deposit; obtain them through the dataset's official access process. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) for details.
 
 For research inquiries, contact **eadampson@ualr.edu**.
